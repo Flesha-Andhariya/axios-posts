@@ -1,5 +1,6 @@
 
 import "./style.css";
+import Button from "../components/Button";
 
 export default function About() {
   return (
@@ -9,6 +10,9 @@ export default function About() {
         <p>
           We love creating beautiful websites and learning new things every day.
         </p>
+          <Button
+          text="Learn More"
+        />
       </div>
     </div>
   );

@@ -1,5 +1,6 @@
 
 import "./style.css";
+import Button from "../components/Button";
 
 export default function Home() {
   return (
@@ -9,7 +10,9 @@ export default function Home() {
         <p>
           Discover new ideas, explore my work, and enjoy a simple and creative experience.
         </p>
-        <button className="home-btn">Get Started</button>
+        <Button
+          text="Get Started"
+        />
       </div>
     </div>
   );

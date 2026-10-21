@@ -1,5 +1,6 @@
 
 import "./style.css";
+import Button from "../components/Button";
 
 export default function Contact() {
   return (
@@ -9,6 +10,9 @@ export default function Contact() {
         <p>Email: abc123@gmail.com</p>
         <p>Phone: +911234567890</p>           
         <p>Address: Bhavnagar, Gujarat, India</p>
+         <Button
+          text="Contact Now"
+        />
       </div>
     </div>
   );
