@@ -1,10 +1,10 @@
-
+import { Link } from "react-router-dom";
 import "./Button.css";
 
 export default function Button(props) {
   return (
-    <button className="custom-button">
+    <Link to={props.link} className="custom-button">
       {props.text}
-    </button>
+    </Link>
   );
 }

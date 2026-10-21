@@ -11,7 +11,7 @@ export default function Home() {
           Discover new ideas, explore my work, and enjoy a simple and creative experience.
         </p>
         <Button
-          text="Get Started"
+          text="Get Started"  link="#"
         />
       </div>
     </div>

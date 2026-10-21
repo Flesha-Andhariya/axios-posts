@@ -11,7 +11,7 @@ export default function About() {
           We love creating beautiful websites and learning new things every day.
         </p>
           <Button
-          text="Learn More"
+          text="Learn More"  link="#"
         />
       </div>
     </div>

@@ -11,7 +11,7 @@ export default function Contact() {
         <p>Phone: +911234567890</p>           
         <p>Address: Bhavnagar, Gujarat, India</p>
          <Button
-          text="Contact Now"
+          text="Contact Now"  link="#"
         />
       </div>
     </div>
