@@ -9,10 +9,8 @@ export default function About() {
         <h1>About Us</h1>
         <p>
           We love creating beautiful websites and learning new things every day.
-        </p>
-          <Button
-          text="Learn More"  link="#"
-        />
+        </p>       
+        <LinkButton to="#">Learn More</LinkButton>
       </div>
     </div>
   );

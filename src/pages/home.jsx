@@ -1,4 +1,3 @@
-
 import "./style.css";
 import Button from "../components/Button";
 
@@ -10,9 +9,7 @@ export default function Home() {
         <p>
           Discover new ideas, explore my work, and enjoy a simple and creative experience.
         </p>
-        <Button
-          text="Get Started"  link="#"
-        />
+        <LinkButton to="#">Get Started</LinkButton>
       </div>
     </div>
   );

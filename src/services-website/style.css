@@ -1,0 +1,84 @@
+.home-page,.about-page,.services-page,.contact-page,.webdev-page{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 50px 20px;
+  background-color: #f3d5c0;
+}
+.home-page h1,.about-page h1,.services-page h1,.contact-page h1,.webdev-page h1 {
+  font-size: 45px;
+  color: #000;
+  margin-bottom: 50px;
+}
+.home-page h2{
+  color: #4a0101;
+  margin-bottom: 30px;
+  text-decoration: underline;
+  font-size: 22px;
+}
+.home-page p,.about-page p,.services-page p,.webdev-intro {
+  font-size: 18px;
+  line-height: 1.7;
+  color: #555;
+  margin-bottom: 50px;
+}
+.services-list {
+  display: flex;
+  gap: 40px;
+}
+.services-list a {
+  padding: 14px 28px;
+  background-color: #4a0101;
+  color: #f3d5c0;
+  text-decoration: none;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: 0.5s;
+  border:none;
+}
+.services-list a:hover {
+  box-shadow: 0px 0px 10px 0px #4a0101;
+}
+.company-details,.webdev-card,.about-card{
+  margin: auto;
+  padding: 30px;
+  background-color: #4a0101;
+  border-radius: 12px;
+  box-shadow: 0px 0px 15px 0px #4a0101;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+.webdev-card:hover,.about-card:hover{
+  transform: translateY(-8px);
+}
+.about-card{
+  width: 350px;
+}
+.company-details h2,.webdev-card h2,.about-card h2 {
+  color: #f3d5c0;
+  margin-bottom: 30px;
+  text-decoration: underline;
+  font-size: 25px;
+}
+.company-details p,.webdev-card p,.about-card p{
+  color: #fff;
+  margin: 15px 0;
+  font-size: 16px;
+}
+.webdev-container,.about-container {
+  display: grid;
+  gap: 50px;
+}
+.webdev-container{
+  grid-template-columns: repeat(3, 1fr);
+}
+.about-container {
+  grid-template-columns: repeat(2, 1fr);
+  margin-bottom: 50px;
+}
+
+
+
