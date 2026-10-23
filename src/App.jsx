@@ -10,7 +10,7 @@ import "./App.css";
 
 export default function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/service-website">
       <nav className="navbar">
         <h2 className="logo">MyWebsite</h2>
 
