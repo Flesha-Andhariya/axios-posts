@@ -10,7 +10,7 @@ export default function Contact() {
 
         <p><strong>Email:</strong> info@example.com</p>
         <p><strong>Phone:</strong> +91 98765 43210</p>
-        <p><strong>Address:</strong> Your Office Address</p>
+        <p><strong>Address:</strong> Bhavnagar,Gujrat</p>
       </div>
     </div>
   );
