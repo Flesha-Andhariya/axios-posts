@@ -1,0 +1,108 @@
+.form-container {
+    width: 100%;
+    margin: 30px auto;
+    padding: 50px;
+    background: #eff3ff;
+    border: 1px solid #cfcfcf;
+    border-radius: 0px;
+    box-shadow: 0 3px 50px #dddddd;
+}
+.form-container h1 {
+  color: #000;
+  font-size: 50px;  
+  margin-bottom: 50px;
+
+}
+.form-container form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.form-container form > label,.form-group{
+    font-weight: bold;
+    margin-top: 8px;
+    text-align: left;
+    color: #191a23;
+    font-size: 20px;
+}
+.form-container input:not([type="radio"]):not([type="checkbox"]),
+.form-container select,
+.form-container textarea {
+  width: 100%;
+  padding: 16px;
+  border: 1px solid #cccccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  font-size: 15px;
+  background-color: #fff;
+  cursor: pointer;
+}
+.form-container .options {
+  display: flex;
+  gap: 12px;
+  color: #000;
+}
+.form-container button {
+    padding: 20px;
+    color: white;
+    background: #444444;
+    border: none;
+    border-radius: 12px;
+    font-size: 20px;
+    cursor: pointer;
+    width: 210px;
+    margin: 20px auto;
+    transition: 0.3s ease;   
+}
+.form-container button:hover {
+    background: #830000;
+}
+.small{
+  text-align: left;
+}
+.checkbox-dropdown {
+  position: relative;
+  margin-top: 8px;
+}
+.checkbox-dropdown summary {
+  padding: 10px;
+  border: 1px solid #cccccc;
+  border-radius: 5px;
+  background: white;
+  cursor: pointer;
+  list-style: none;
+  text-align: left;
+  font-size: 15px;
+}
+.checkbox-dropdown summary::after {
+  content: "▼";
+  float: right;
+  font-size: 12px;
+}
+.dropdown-options {
+  margin-top: 5px;
+  padding: 10px;
+  border: 1px solid #cccccc;
+  border-radius: 5px;
+  background: white;
+  position: absolute;
+  width:100%;
+  box-sizing: border-box;
+}
+.dropdown-options .option {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px;
+  cursor: pointer;
+}
+.dropdown-options .option input {
+  width: auto;
+}
+
+.error-message {
+  color: red;
+  font-size: 15px;
+  text-align: left;
+  margin-top: -10px;
+}
