@@ -90,39 +90,44 @@ export default function FormValidation() {
     setSuccess("");
   }
 
-  function handleSubmit(e) {
-    e.preventDefault();
-    const form = e.target;
-    const newErrors = {};
-    const fields = [
-      "name",
-      "email",
-      "mobile",
-      "address",
-      "city",
-      "gender",
-      "dob",
-      "qualification",
-      "hobby",
-      "images",
-      "documents",
-      "note",
-    ];
-    fields.forEach((name) => {
-      const input = form.elements[name];
-      const value = input.value || "";
-      const error = validateField(name, value, form);
-      if (error) {
-        newErrors[name] = error;
-      }
-    });
-    setErrors(newErrors);
-    setSuccess("");
-    if (Object.keys(newErrors).length === 0) {
-      setSuccess("Your form is submitted successfully!");
-      form.reset();
+function handleSubmit(e) {
+  e.preventDefault();
+
+  const form = e.target;
+  const formData = new FormData(form);
+  const newErrors = {};
+
+  for (const [name, value] of formData.entries()) {
+    const error = validateField(name, value, form);
+
+    if (error) {
+      newErrors[name] = error;
     }
   }
+
+  // Gender radio button
+  if (!form.querySelector('[name="gender"]:checked')) {
+    newErrors.gender = "Please select your gender";
+  }
+
+  // Qualification checkboxes
+  if (!form.querySelector('[name="qualification"]:checked')) {
+    newErrors.qualification = "Please select at least one qualification";
+  }
+
+  // Hobby checkboxes
+  if (!form.querySelector('[name="hobby"]:checked')) {
+    newErrors.hobby = "Please select at least one hobby";
+  }
+
+  setErrors(newErrors);
+  setSuccess("");
+
+  if (Object.keys(newErrors).length === 0) {
+    setSuccess("Your form is submitted successfully!");
+    form.reset();
+  }
+}
 
   return (
     <div className="form-container">
