@@ -1,0 +1,47 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f3f4fa;
+}
+.posts-page {
+  padding: 30px;
+  background: #191a23;
+  font-family: Arial, sans-serif;
+}
+.posts-page h1 {
+  color: #fff;
+  font-size: 70px;
+  text-decoration: underline;
+}
+.posts-grid {
+  padding: 100px;
+}
+.post-card {
+  background: white;
+  border-radius: 30px;
+  margin-bottom: 100px;
+  overflow: hidden;
+  transition: 0.3s ease;
+}
+.post-card:hover {
+      transform: translateY(-2px) scale(1.02);
+}
+.post-card img {
+  width: 100%;
+}
+.post-card h2 {
+  padding: 30px;
+  font-size: 30px;
+  color: #000;
+  text-transform: capitalize;
+}
+.post-card p {
+  padding: 0 30px 30px 30px;
+  color: #555;
+  line-height: 1.6;
+  font-size: 22px;
+}
+

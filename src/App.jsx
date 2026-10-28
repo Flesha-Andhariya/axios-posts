@@ -1,12 +1,6 @@
-import FormValidation from "./form-validation/FormValidation";
-import "./App.css";
 
-function App() {
-  return (
-    <div>
-      <FormValidation />
-    </div>
-  );
+import PostList from "./axios-posts/PostList";
+
+export default function App() {
+  return <PostList />;
 }
-
-export default App;
